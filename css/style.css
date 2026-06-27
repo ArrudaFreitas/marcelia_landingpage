@@ -306,6 +306,50 @@ em{
 .gancho__grid .gancho__card:nth-child(2){ transition-delay: .12s; }
 .gancho__grid .gancho__card:nth-child(3){ transition-delay: .24s; }
 
+.gancho__blob-wrap{
+  max-width: 640px;
+  margin: 2.5rem auto 0;
+  padding: 3rem 3.5rem;
+  background: var(--lilas-pastel);
+  border: 1px solid var(--lilas);
+  border-radius: 2.5rem 6px 2.5rem 6px;
+}
+.gancho__checklist{
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+.gancho__checklist li{
+  display: flex;
+  align-items: flex-start;
+  gap: .9rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.gancho__checklist li::before{
+  content: "";
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: var(--violeta);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 8L6.5 11L12.5 5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: 100%;
+  margin-top: .15rem;
+}
+.gancho__closing{
+  max-width: 620px;
+  margin: 2rem auto 0;
+  text-align: center;
+  color: var(--violeta);
+  font-style: italic;
+  line-height: 1.6;
+}
+
 /* ===== Sobre ===== */
 .sobre{ padding-block: clamp(4.5rem, 10vw, 8rem); background: var(--papel); }
 .sobre__grid{ display: grid; gap: 2rem; align-items: center; }
